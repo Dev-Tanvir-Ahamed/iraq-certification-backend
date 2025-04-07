@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-import certificateRoutes from "./routes/certificateRoutes";
+import voterRoutes from "./routes/VoterRoutes";
 
 const app = express();
 
@@ -11,6 +11,6 @@ app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.use("/api/certificate", certificateRoutes);
+app.use("/api/voters", voterRoutes);
 
 export default app;
