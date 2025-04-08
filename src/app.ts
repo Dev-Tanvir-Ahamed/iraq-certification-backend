@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-import voterRoutes from "./routes/VoterRoutes";
+import voterRoutes from "./routes/voterRoutes";
 
 const app = express();
 
